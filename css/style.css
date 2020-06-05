@@ -117,11 +117,12 @@ body {
 
 
 
-/* *MAIN */
+/* !MAIN */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .menu-sidebar {
@@ -208,6 +209,7 @@ body {
     margin-top: 18px;
 }
 
+/* *Post block */
 .create-post {
     background-color: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -295,7 +297,7 @@ body {
 }
 
 
-/* Post block */
+/* *Post block */
 .post {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -422,4 +424,122 @@ body {
     height: 1px;
     margin-bottom: 16px;
     background-color: #e8e8e8;
+}
+
+
+/* *Stories block */
+.right-sidebar {
+    width: 384px;
+}
+
+.story {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-left: 24px;
+    padding: 16px;
+    padding-left: 24px;
+}
+
+.story-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.story-title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #262626;
+}
+
+.story-button-link {
+    text-decoration: none;
+}
+
+.story-button-link:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.story-svg {
+    vertical-align: middle;
+}
+
+.story-button-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #0050B3;
+}
+
+.story-item-add,
+.story-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.story-img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: #F5F5F5;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1890FF;
+}
+
+.story-img--concuria {
+    background-image: url("../img/logo-concuria.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #1890FF;
+}
+
+.story-img--figma {
+    background-image: url("../img/logo-figma.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #1890FF;
+}
+
+.story-img--ant {
+    background-image: url("../img/logo-ant.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #1890FF;
+}
+
+.story-item-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #0050B3;
+}
+
+.story-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #8C8C8C;
+    width: 100%;
+    word-wrap: break-word;
 }
