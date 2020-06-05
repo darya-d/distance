@@ -350,6 +350,7 @@ body {
 .post .user-avatar {
     width: 48px;
     height: 48px;
+    margin-right: 16px;
 }
 
 .post-author {
