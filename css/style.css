@@ -147,7 +147,7 @@ body {
 .menu-sidebar .user__avatar {
     width: 24px;
     height: 24px;
-    background-repeat: 50%;
+    border-radius: 50%;
     object-fit: cover;
 }
 
